@@ -1,18 +1,20 @@
-import {
-  Card,
-  CardContent,
-  CardActions,
-  Button,
-  TextField,
-} from "@mui/material";
+import { Card, CardContent, CardActions, Button, Paper } from "@mui/material";
 import React from "react";
+import { IngredientsEdit } from "../shared/IngredientsEdit";
 
 export const CreateRecipe = () => {
   return (
     <>
       <Card>
         <CardContent>
-          <TextField label="Name" variant="outlined"></TextField>
+          <div style={{ display: "flex" }}>
+            <Paper>
+              <p>picture here</p>
+            </Paper>
+            <div>
+              <IngredientsEdit></IngredientsEdit>
+            </div>
+          </div>
         </CardContent>
         <CardActions>
           <Button variant="contained">Create</Button>
